@@ -5,11 +5,11 @@
 class Frmt < Formula
   desc ""
   homepage "https://github.com/Shobhit-Nagpal/frmt"
-  version "0.1"
+  version "0.2"
 
   on_macos do
-    url "https://github.com/Shobhit-Nagpal/frmt/releases/download/v0.1/frmt_0.1_darwin_all.tar.gz"
-    sha256 "ea5ed5134f85f4fef8e4d91e80349ed6b6a215b4da11046ab5c3ad1ebb5c3272"
+    url "https://github.com/Shobhit-Nagpal/frmt/releases/download/v0.2/frmt_0.2_darwin_all.tar.gz"
+    sha256 "00c66cb19b5d7938008ffc5539c23fbfddbd539ec7ea66708fbe5bd4c04d7209"
 
     def install
       bin.install "frmt"
@@ -18,16 +18,16 @@ class Frmt < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Shobhit-Nagpal/frmt/releases/download/v0.1/frmt_0.1_linux_arm64.tar.gz"
-      sha256 "2241688e4132c56ebda4ddea89b44fc07d33a749e76edd8f9e56d52de300f77a"
+      url "https://github.com/Shobhit-Nagpal/frmt/releases/download/v0.2/frmt_0.2_linux_arm64.tar.gz"
+      sha256 "412ce0060201822fcdedf42405d01c789d1d97202e31282b9365849d929c1f78"
 
       def install
         bin.install "frmt"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/Shobhit-Nagpal/frmt/releases/download/v0.1/frmt_0.1_linux_amd64.tar.gz"
-      sha256 "36cb834838e0b8f0d40b74365f1a85c67c4ca3bd308a7691c54345bfc4030089"
+      url "https://github.com/Shobhit-Nagpal/frmt/releases/download/v0.2/frmt_0.2_linux_amd64.tar.gz"
+      sha256 "34c2c44eaf3ae2e178552399834e8ac451e16cbe4a829c66c73a4f2394e23ff3"
 
       def install
         bin.install "frmt"
